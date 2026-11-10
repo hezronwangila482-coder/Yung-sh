@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>yung’sh | Shop online, delivered to you</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="yung’sh: trendy products, fair prices, fast delivery. Order on WhatsApp.">
+<meta name="theme-color" content="#111111">
+<style>
+:root{--bg:#111;--card:#1c1c1c;--text:#f5f5f0;--mute:#a8a8a0;--pop:#c6ff3d;--pop2:#ff4fa3}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1000px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:9;background:rgba(17,17,17,.92);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2a}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-weight:900;font-size:24px;letter-spacing:-1px}.logo b{color:var(--pop)}
+nav a{margin-left:16px;font-size:14px;color:var(--mute)}
+.btn{display:inline-block;background:var(--pop);color:#111;font-weight:800;padding:14px 22px;border-radius:999px;font-size:16px;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:var(--text);border:2px solid #444}
+.hero{padding:64px 0 48px}
+.tag{display:inline-block;background:#222;border:1px solid #333;color:var(--pop);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700}
+h1{font-size:clamp(44px,13vw,96px);line-height:.95;letter-spacing:-3px;font-weight:900;margin:18px 0}
+h1 span{color:var(--pop)}h1 em{font-style:normal;color:var(--pop2)}
+.hero p{color:var(--mute);font-size:18px;max-width:520px;margin-bottom:26px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.strip{background:var(--pop);color:#111;font-weight:800;padding:12px 0;overflow:hidden;white-space:nowrap}
+.strip div{display:inline-block;animation:slide 18s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:56px 0}
+h2{font-size:clamp(30px,7vw,46px);letter-spacing:-1.5px;margin-bottom:8px}
+.sub{color:var(--mute);margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{background:var(--card);border-radius:18px;padding:16px;display:flex;flex-direction:column;border:1px solid #2a2a2a}
+.pic{height:140px;border-radius:12px;display:grid;place-items:center;font-size:62px;margin-bottom:12px}
+.card h3{font-size:18px}.card .price{color:var(--pop);font-weight:800;margin:4px 0 12px}
+.card .btn{margin-top:auto;padding:11px;text-align:center;font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.step{background:var(--card);border-radius:18px;padding:20px;border:1px solid #2a2a2a}
+.step i{font-style:normal;font-size:34px;font-weight:900;color:var(--pop2)}
+.step h3{margin:6px 0}.step p{color:var(--mute);font-size:15px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;text-align:center}
+.why div{background:var(--card);padding:18px 10px;border-radius:16px;font-weight:700}.why span{display:block;font-size:30px}
+.contact{background:var(--card);border-radius:24px;padding:30px 20px;text-align:center;border:1px solid #2a2a2a}
+.contact .cta{justify-content:center;margin-top:18px}
+footer{padding:28px 0;color:var(--mute);font-size:14px;text-align:center;border-top:1px solid #2a2a2a}
+.fab{position:fixed;right:16px;bottom:16px;z-index:10;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:28px;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">yung<b>’</b>sh</a><nav><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<span class="tag">🔥 New drops every week</span>
+<h1>Fresh finds.<br><span>Fair prices.</span><br><em>Fast delivery.</em></h1>
+<p>yung’sh is your online shop for things you actually want. Pick it, WhatsApp us, get it delivered to your door.</p>
+<div class="cta"><a class="btn" href="#shop">Shop now</a><a class="btn alt" data-wa="Hi yung’sh! I want to ask about your products.">💬 Chat with us</a></div>
+</div>
+
+<div class="strip"><div id="strip"></div></div>
+
+<section id="shop"><div class="wrap">
+<h2>What’s hot right now</h2><p class="sub">Tap Order and we’ll continue on WhatsApp.</p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<h2>Ordering is easy</h2><p class="sub">Three steps. No stress.</p>
+<div class="steps">
+<div class="step"><i>1</i><h3>Pick</h3><p>Choose what you like from the shop above.</p></div>
+<div class="step"><i>2</i><h3>Message us</h3><p>Tap Order. We confirm the price, size or colour on WhatsApp.</p></div>
+<div class="step"><i>3</i><h3>Get it</h3><p>We deliver to you. Pay on delivery or by M-Pesa.</p></div>
+</div></div></section>
+
+<section><div class="wrap"><h2>Why yung’sh?</h2><p class="sub">&nbsp;</p>
+<div class="why"><div><span>🚚</span>Fast delivery</div><div><span>💸</span>Fair prices</div><div><span>✅</span>Quality checked</div><div><span>📱</span>Order on WhatsApp</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+<h2>Let’s talk 👋</h2><p class="sub" style="margin:0">Questions, custom orders or bulk buying? Message us anytime.</p>
+<div class="cta"><a class="btn" data-wa="Hi yung’sh! I would like to order.">WhatsApp us</a><a class="btn alt" id="ig" target="_blank" rel="noopener">Instagram</a><a class="btn alt" id="tt" target="_blank" rel="noopener">TikTok</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> yung’sh. All rights reserved.</div></footer>
+<a class="fab" data-wa="Hi yung’sh! I would like to order." aria-label="WhatsApp">💬</a>
+
+<script>
+// ====== EDIT THIS PART ======
+const SHOP={
+  whatsapp:"254708447871",        // your number, no + and no spaces (Kenya: 2547XXXXXXXX)
+  instagram:"https://instagram.com/yourhandle",
+  tiktok:"https://tiktok.com/@yourhandle",
+  currency:"KSh",
+  products:[                       // emoji = placeholder, change name/price/colour as you like
+    {name:"Sneakers",price:2500,emoji:"👟",color:"#2b3a1f"},
+    {name:"Streetwear Hoodie",price:1800,emoji:"🧥",color:"#3a1f33"},
+    {name:"Caps",price:600,emoji:"🧢",color:"#1f2f3a"},
+    {name:"Phone Accessories",price:500,emoji:"🎧",color:"#3a331f"},
+    {name:"Bags",price:1500,emoji:"🎒",color:"#1f3a33"},
+    {name:"Watches",price:2000,emoji:"⌚",color:"#3a1f1f"}
+  ]
+};
+// ============================
+const wa=t=>`https://wa.me/${SHOP.whatsapp}?text=${encodeURIComponent(t)}`;
+const fmt=n=>SHOP.currency+" "+n.toLocaleString("en-KE");
+document.getElementById("grid").innerHTML=SHOP.products.map(p=>`
+<div class="card"><div class="pic" style="background:${p.color}">${p.emoji}</div>
+<h3>${p.name}</h3><div class="price">${fmt(p.price)}</div>
+<a class="btn" href="${wa("Hi yung’sh! I want to order: "+p.name+" ("+fmt(p.price)+")")}" target="_blank" rel="noopener">Order</a></div>`).join("");
+document.querySelectorAll("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"});
+document.getElementById("ig").href=SHOP.instagram;document.getElementById("tt").href=SHOP.tiktok;
+const s="⚡ FAST DELIVERY ⚡ FAIR PRICES ⚡ NEW DROPS WEEKLY ⚡ ORDER ON WHATSAPP ";document.getElementById("strip").textContent=s.repeat(6);
+document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
